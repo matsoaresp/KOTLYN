@@ -10,9 +10,10 @@ fun main() {
         Mercado("Leite, Refrigerante, Suco, Agua...", "Bebidas", 6.99, 100),
         Mercado("Chocolate, Balas...", "Doces", 7.50, 40)
     )
-    listaProdutos[0].aplicarDesconto(10.0)
-
-
+    for (produto in listaProdutos) {
+        produto.aplicarDesconto(10.0)
+    }
+    println("Mercadoria desconto de 10%")
     for (produto in listaProdutos) {
         produto.exibirDetalhes()
     }
